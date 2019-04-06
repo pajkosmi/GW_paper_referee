@@ -1,0 +1,250 @@
+\documentclass[11pt]{article}
+\usepackage{times}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ...
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{wrapfig}
+\usepackage{natbib}
+%\usepackage[square,comma,numbers,sort]{natbib}
+\bibpunct{(}{)}{;}{a}{}{,} % to follow the A&A style
+\usepackage[pdftex, plainpages=false, colorlinks=true, linkcolor=blue, citecolor=blue, bookmarks=false]{hyperref}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{sectsty}
+\usepackage{url}
+\usepackage{lipsum}
+\usepackage[tiny,compact]{titlesec}
+\usepackage{fancyhdr}
+%\usepackage{deluxetable}
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+\usepackage{verbatim}
+\usepackage[super]{nth}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+\setlength{\topmargin}{-0.5in}
+\setlength{\headheight}{0.2in}
+\setlength{\headsep}{0.2in}
+\setlength{\textheight}{9.in}
+%\setlength{\footskip}{-0.2in}
+%\setlength{\voffset}{0.0in}
+%\setlength{\tabcolsep}{1pt}
+
+\newcommand{\todo}[1]{{\color{red}$\blacksquare$~\textsf{[TODO: #1]}}}
+
+% The Title of this Whole Thing
+%\newcommand{\doctitle}{Personal Statement}
+
+\sectionfont{\normalsize}
+\subsectionfont{\normalsize}
+\subsubsectionfont{\normalsize}
+\singlespacing
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\fancyplain{}{\doctitle}}
+\rhead{\fancyplain{}{M.A. Pajkos}}
+\rfoot{\fancyplain{}{\thepage}}
+
+%\bibliographystyle{apj}
+\bibliographystyle{nsf}
+%\bibliographystyle{physrev}
+
+
+\input macros.tex
+\input journal_abbr.tex
+
+%\titlespacing*{\section}{0in}{0.2in}{0in}
+%\titlespacing*{\subsection}{0in}{0.1in}{0in}
+\titleformat*{\subsection}{\itshape}
+%\titlespacing*{\subsubsection}{0in}{0.in}{0in}
+\titleformat*{\subsubsection}{\itshape}
+\setlength{\abovecaptionskip}{3pt}
+
+\begin{document}
+
+\setcounter{page}{1} \pagenumbering{arabic} \renewcommand{\thepage}
+           {Ref Report-- \arabic{page}}%\pagestyle{plain}
+
+\begin{center}
+{\bf Referee Report} \vspace{-0.2in}
+%\section*{Project Narrative}
+\end{center}
+
+Referee Report 
+
+\textbf{Author's response in this font}\\
+
+\textbf{Edits made in the paper are colored in red and begin with the number corresponding to the referee's specific comment.  The referee's comments are insightful and help add nuance to our project.  Below we outline the changes made with respect to each comment.}\\
+
+This work presents results from a large set of 2D neutrino radiation-hydrodynamic simulations of core collapse supernovae. The work focuses on the features of the accretion phase that are imprinted on the gravitational waveforms. The models considered are mainly characterized by high rotation rates and a simplified treatment of the gravity, using an effective gravitational potential. The results and discussion may be of interest to both the supernova community and the gravitational-wave community, as they provide information in a region of the parameter space that has not been much studied in the past.
+
+My main criticism about this work is the possible systematic effects that the 
+use of an effective GR potential may introduce in their results. I expound on
+this below. I think an explanation should be provided.
+
+Before the paper is accepted, there is a list of issues that the authors need to 
+address:\\
+
+1. The authors should emphasize more clearly what their work provides compared to previous studies and simulations. It should be easier to the reader to identify what is new in this work and why it is relevant enough to deserve publication.\\
+
+\textbf{[1] Near the end of the introduction and at the beginning of the conclusion we include the phrase, ``The strength of this project is its ability analyze GWs hundreds of milliseconds post bounce from multiple progenitors while accurately accounting for rotation and neutrinos" to more explicitly outline what makes our project unique from previous works.}\\
+
+
+2. The strongest point of their simulation setup is the treatment of neutrinos 
+(M1, state-of-the-art in the field). The weakest points are the use of an 
+effective gravitational potential instead of full (or CFC) GR and the absence of 
+magnetic fields. Other limitations are the dimensionality (2D) and the (most likely unrealistically) large rotation rates considered for the progenitors (not common for most supernovae progenitors). The latter is a valid numerical choice, of course, but the interest of that region of the parameter space is questionable.\\
+
+Given the authors' setup, I miss a reference to the work of Obergaulinger and
+collaborators who used a similar setup (same treatment of neutrinos and rotating progenitors) but, in addition, included magnetic fields.
+
+Relevant references are:
+
+http://adsabs.harvard.edu/abs/2018JPhG...45h4001O
+
+http://adsabs.harvard.edu/abs/2017MNRAS.469L..43O\\
+
+\textbf{[2] We include the relevant references in the Methods section.}\\
+
+3. The literature survey outlined in the introduction is incomplete:
+
+Post-bounce signals of core-collapse simulations in CFC are also reported in
+
+http://adsabs.harvard.edu/abs/2013ApJ...779L..18C
+
+http://adsabs.harvard.edu/abs/2019MNRAS.484.3307M
+
+CFC has been long extended to XCFC to allow for black hole formation in
+
+http://adsabs.harvard.edu/abs/2009PhRvD..79b4017C
+
+One-second long post-bounce simulations leading to black hole formation were
+presented in 
+
+http://adsabs.harvard.edu/abs/2013ApJ...779L..18C\\
+
+\textbf{[3] We include the relevant references in the Introduction.}\\
+
+
+4. The Solberg-Holland criterion for the stability of convective regions is
+a valid argument within the simplifications assumed in this work. However, 
+there are other mechanisms that could be active to provide negative entropy 
+regions in the presence of magnetic fields, namely different dynamo mechanisms 
+and, most importantly, the magneto-rotational instability. See, in particular, 
+the discussion in  
+
+http://adsabs.harvard.edu/abs/2007A26A...474..169C
+
+There is no mention in the paper to these other possibilities. This omission 
+must be corrected.
+
+The authors should rephrase their statements on the stability of post-shock 
+convection, made in different parts of the paper, since those might not hold 
+true if magnetic fields were included (and their effects properly captured) 
+in the simulations.\\
+
+\textbf{[4] For initial context, we include a reference to the relevant paper in the intro to account for 3D effects such as SASI and MRI.   At the end of Section 3.4, we include a warning that the presence of magnetic fields could cause instabilities that compromise the stability of post shock convection (ex. MRI).  }\\
+
+5. The authors find that the vibrational signals of the PNS are damped and 
+the gravitational-wave signals are muted with increasing rotation speeds. This
+is one of their main findings. They attribute this muting to be of physical origin.
+Again, I think that such a statement is only valid within the physical assumptions 
+of their setup (enhanced convection by MRI would change the picture). A word of  caution would seem necessary. \\
+
+\textbf{[5] Also mentioned in the warning at the end of Section 3.4, we note that instabilities due to magnetic fields can also affect the behavior of the PNS.}\\
+
+In addition, the progenitors for which this muting becomes significant are probably rotating much too fast to be of practical 
+interest. \\
+
+\textbf{[5] We acknowledge the small percentage of supernova progenitors that may have central angular velocities greater than 1 radian/sec.  Included in the introduction is an additional reference to de Mink et al. (2013) that shows the slim, yet distinct, possibility of rapidly rotating progenitors due to binary interactions.  We emphasize that this work is completed within the context of a controlled study.  While it is likely that the majority of CCSN progenitors are not rapid rotators, we justify our numerical choice because it allows us to clearly observe how the Solberg-Hoiland instability manifests itself and its specific influence on the GW signal.}\\
+
+6. When discussing the comparison to CFC GR simulations (page 6) the authors 
+omit a relevant reference that first presented a close comparison between CFC 
+and full GR waveforms: 
+
+http://adsabs.harvard.edu/abs/2004PhRvD..69h4024S\\
+
+\textbf{[6] We include the relevant reference in the Introduction.}
+
+
+7. On their rotational profile: the authors mention other approaches beyond the 
+simple angular momentum profile they use, namely O'Connor \& Ott 2011 and Summa et al 2018. How do these vary from the law the authors use? A comment would be useful for the reader, in particular, to gauge how different they are from the profiles of rotating stellar evolution models. Possibly a mention to Figure 1 at the end of section 3.3 could also be useful. \\
+
+\textbf{[7] At the end of Section 3.3, we describe the radial, rotation profiles of O’Connor \& Ott 2011 and Summa et al. 2018 with respect to our Figure 1.}\\
+
+8. On the figure 4 and the discussion in section 3.4 and in the accretion-phase 
+waveforms: The comparison with the results of Richers et al 2017 (CFC and
+simplified neutrino treatment) allows the authors to evaluate the quality of
+their treatment of gravity. The agreement in the waveform in the bounce phase 
+is excellent and this is a strong point in favor of their effective potential. 
+However, regardless of the same (simplified) neutrino treatment, the post-bounce  waveforms plotted in this figure are markedly different in terms of both amplitude  (highly damped in the authors' code) and frequency (higher in their approach).  Therefore, the conclusion is that the gravitational potential used has an effect on the waveforms. That effect will also be present even with their improved neutrino treatment simulations.
+
+As a result, I disagree with the statement the authors write at the beginning of 
+section 3.4 about their results supporting "the efficacy of our effective GR 
+potential for accurately modelling the GW signals from CCSNe". While the bounce signal is properly captured, that may be not sufficient, as gravitational waves from core-collapse supernovae come mainly from the PNS evolution, well beyond post-bounce, and in that part the effective potential used in these simulations produces important differences in the waveforms (cf. Figure 4). As the PNS evolves and gets colder it gradually shrinks and GR effects become more important. Hence, that might affect the correctness of the effective potential used in this work.
+
+This issue requires explanation.\\
+
+\textbf{[8] The referee notes that differences in the GW waveforms are due to a difference in gravitational treatment.  While gravitational treatments compared in Figure 4 are indeed different, CoCoNuT and FLASH have different hydrodynamic treatments.  Likewise, these studies were performed at different grid resolutions.  Both of these factors have been noted in the Figure caption as well as the end of Section 3.2.  As hydrodynamics has a significant impact on the convective activity responsible for the GW signal $>$ 10 ms post bounce and grid resolution has been shown to impact the GW signal (see Ott 2009, Scheidegger et al. 2010, Andresen et al. 2018 O'Connor \& Couch 2018, and Summa et al. 2018), the referee's conclusion that the difference in gravitational treatments being entirely responsible for the waveform differences seems unfair.}
+
+\textbf{We agree that the GW signal and PNS evolution will be affected.  As a caveat, we add a reference to Muller et al. 2013 that points out that the peak GW frequency from GR effective potential is underestimated, compared to xCFC, while preserving the GW amplitude and PNS compactness (in beginning of Section 3.4).  Nevertheless, the GR effective potential has been shown to accurately reproduce results from the neutron star migration test (Marek et al. 2006, O'Connor \& Couch 2018).}\\
+
+9. The paper discusses in several places the vibrational modes of oscillations of
+PNS but fails to cite some relevant work on the subject:
+
+http://adsabs.harvard.edu/abs/2013ApJ...779L..18C
+
+http://adsabs.harvard.edu/abs/2018MNRAS.474.5272T
+
+http://adsabs.harvard.edu/abs/2019MNRAS.482.3967T\\
+
+\textbf{[9] We include the relevant references in the Introduction.}\\
+
+10. Figure 12:
+
+Is there any reason why the advanced Virgo sensitivity curve is not included in this plot? The only chance to detect gravitational waves from core-collapse supernovae is  if the event occurs in the Galaxy (and even so the chances of detection are only marginal). The current network of detectors (advanced LIGO and advanced Virgo) are the only two fully operative detectors that might detect one such event if we were lucky enough to witness a star exploding in our galaxy during O3. Adding KAGRA's sensitivity curve is of course fine, but not adding advanced Virgo's seems quite unfair.
+
+The assumed distance to the source should be also indicated in the caption of the 
+figure.\\
+
+\textbf{[10] We include the AdV sensitivity curves in Figure 12 and the fiducial distance of 10 kpc in the caption.}\\
+
+It is interesting that the low frequency peak in the panels in the top row shows 
+little dependence with rotation. Perhaps the authors could elaborate on that?\\
+
+\textbf{[10] We associate this signal with strong prompt convection that occurs within the first 25 ms post bounce.  This signal appears clearly as the bright region in Figure 6 for all rotational velocities.  This fact is noted in Section 3.5.}\\
+
+\textbf{Minor Changes:}\\
+
+\textbf{We follow the recommendation made by the Data Editors to add citations to each piece of software used.}\\
+
+\textbf{We change to consistent line patterns for each of the GW detectors in Figure 12.}
+
+
+
+% \input{significance}
+%
+% \input{objectives_milestones}
+%
+% \input{computational_readiness}
+
+\newpage
+
+\setcounter{page}{1} \pagenumbering{arabic} \renewcommand{\thepage}
+           {Bibliography -- \arabic{page}}
+
+\renewcommand\bibsection{\section*{References}}
+\setlength{\bibsep}{2pt}
+%\begin{multicols}{2}
+\bibliography{ProjectNarrative,extraRefs}
+%\end{multicols}
+
+
+\end{document}
