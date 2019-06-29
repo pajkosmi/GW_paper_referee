@@ -60,22 +60,24 @@
 \author[0000-0002-8228-796X]{Evan P. O'Connor}
 \affiliation{Department of Astronomy and The Oskar Klein Centre, Stockholm University, AlbaNova, SE-106 91 Stockholm, Sweden}
 
-\received{\today}
+\accepted{2019 April 28 for publication in The Astrophysical Journal }
+
 %\revised{September 27, 2016}
 %\accepted{\today}
 %% Command to document which AAS Journal the manuscript was submitted to.
 %% Adds "Submitted to " the arguement.
-\submitjournal{ApJ}
+
+%\submitjournal{ApJ}
 \shorttitle{Gravitational Waves from CCSNe}
 \shortauthors{Pajkos et al.}
 
 % \abstract{}{}{}{}{} 
 % 5 {} token are mandatory
  \begin{abstract}
-  We explore the influence of progenitor mass and rotation on the gravitational-wave (GW) emission from core-collapse supernovae, during the postbounce, preexplosion, accretion-phase.  We present the results from 15 two-dimensional (2D) neutrino radiation-hydrodynamic simulations from initial stellar collapse to $\sim$300 ms after core bounce.  We examine the features of the GW signals for four zero-age main sequence (ZAMS) progenitor masses ranging from 12 \(M_\odot\) to 60 \(M_\odot\) and four core rotation rates from 0 to 3 rad s$^{-1}$. We find that GW strain immediately around core bounce is fairly independent of ZAMS mass and---consistent with previous findings---that it is more heavily dependent on the core angular momentum.  At later times, all nonrotating progenitors exhibit loud GW emission, which we attribute to vibrational g-modes of the protoneutron (PNS) star excited by convection in the postshock layer and the standing accretion shock instability (SASI).  We find that increasing rotation rates results in muting of the accretion-phase GW signal due to centrifugal effects that inhibit convection in the postshock region, quench the SASI, and slow the rate at which the PNS star peak vibrational frequency increases.  Additionally, we verify the efficacy of our approximate general relativistic (GR) effective potential treatment of gravity by comparing our core bounce GW strains with the recent 2D GR results of other groups. 
-   \keywords{supernovae: general --
-                core-collapse --
-                stars: massive
+  We explore the influence of progenitor mass and rotation on the gravitational-wave (GW) emission from core-collapse supernovae, during the postbounce, preexplosion, accretion-phase.  We present the results from 15 two-dimensional (2D) neutrino radiation-hydrodynamic simulations from initial stellar collapse to $\sim$300 ms after core bounce.  We examine the features of the GW signals for four zero-age main sequence (ZAMS) progenitor masses ranging from 12 \(M_\odot\) to 60 \(M_\odot\) and four core rotation rates from 0 to 3 rad s$^{-1}$. We find that GW strain immediately around core bounce is fairly independent of ZAMS mass and---consistent with previous findings---that it is more heavily dependent on the core angular momentum.  At later times, all nonrotating progenitors exhibit loud GW emission, which we attribute to vibrational g-modes of the protoneutron (PNS) star excited by convection in the postshock layer and the standing accretion shock instability (SASI).  We find that increasing rotation rates results in muting of the accretion-phase GW signal due to centrifugal effects that inhibit convection in the postshock region, quench the SASI, and slow the rate at which the PNS peak vibrational frequency increases.  Additionally, we verify the efficacy of our approximate general relativistic (GR) effective potential treatment of gravity by comparing our core bounce GW strains with the recent 2D GR results of other groups. 
+   \keywords{gravitational waves --
+    stars: massive --
+    supernovae: general
                }
 \end{abstract}
 
@@ -91,7 +93,7 @@ Core-collapse supernovae (CCSNe) became the first extra-solar multimessenger obj
 So far, only the mergers of black hole binaries and a neutron star binary have been detected in GWs, but CCSNe are also predicted to be prodigious GW sources, although not quite as ``loud'' as compact object binary mergers.
 Accurate predictions of the expected GW signal from CCSNe is key to increasing the likelihood of detection by GW observatories such as Advanced LIGO (aLIGO) and Advanced Virgo (AdV) and will be crucial in our ability to extract physical meaning from a future CCSN GW detection \citep{abdik:2014,gossan:2016}.
 
-CCSNe are routinely observed in the EM window, and the data-collecting power of synoptic surveys such as the Large Synoptic Survey Telescope and Zwicky Transient Facility may increase the volume of such data for CCSNe by orders of magnitude \citep{ivezic:2008,bellm:2019}.
+CCSNe are routinely observed in the EM window, and the data-collecting power of synoptic surveys such as the Large Synoptic Survey Telescope and Zwicky Transient Facility may increase the volume of such data for CCSNe by orders of magnitude \citep{ivezic:2019,bellm:2019}.
 Still, until the late nebular phase, which is often too dim to be easily observed for distant CCSNe, the EM emission arises from the very outermost layers of the progenitor star and the central core regions, where the explosion is driven, are obscured. 
 This makes it challenging to connect EM emission from CCSNe directly to the mechanism that powers them.
 Due to their relatively small interaction probabilities with matter, both neutrinos and GWs offer windows through which to peer directly into the heart of a CCSN explosion.  
@@ -107,7 +109,7 @@ The increased expense of including a fully dynamical spacetime evolution coupled
 Approximations that maintain sufficient numerical accuracy become necessary in order to reduce computational cost.  
 A common approach for CCSNe, particularly in 2D, is the conformal flatness condition (CFC) approximation wherein the spatial three-metric is obtained approximately from the flat spacetime three-metric.
 CFC has been shown to accurately reproduce prebounce and early postbounce signals from CCSNe to within a few percent when compared with direct solutions to Einstein's field equations  \citep{ott:2007}.  Likewise, while some differences appear, \citet{shibata:2004} find good qualitative agreement between the effective GR potential and CFC.  This conformal flatness approach has also been extended to an ``augmented CFC" scheme as introduced by \citet{saijo:2004}, refined by \citet{cordero-carrion:2009}, and utilized by \citet{bmuller:2019}.
-A further approximation, also common in simulations of the CCSN mechanism, is to couple an effective GR gravitational potential to otherwise Newtonian dynamics \citep{rampp:2002, marek:2006, bruenn:2016,  morozova:2018, oconnor:2018}.  
+A further approximation, also common in simulations of the CCSN mechanism, is to couple an effective GR gravitational potential to otherwise Newtonian dynamics \citep{rampp:2002, marek:2006, bruenn:2016,  moro:2018, oconnor:2018}.  
 This relativistic effective potential empirically satisfies the solution to hydrostatic equilibrium according to a modified Tolman-Oppenheimer-Volkoff equation \citep{rampp:2002, marek:2006}.
 This approach further reduces the computational expense of CCSN simulations relative to the CFC approach and reproduces fairly accurately gross features of CCSN simulations \citep{marek:2006, muller:2012,oconnor:2018}.  
 
@@ -128,7 +130,7 @@ While \citet{woosley:2006} observe that only 1\% of massive stars may reach the 
 In addition to the breadth of parameter space we cover, we also explore the role of rotation up to 300 ms postbounce.  
 We find that rotation restricts the growth of SASI by centrifugally flattening the shock, leaving it slightly oblate. Likewise, the positive angular momentum gradient created by the rotation stabilizes the postshock convection according to the Solberg-H{\o}iland stability criterion \citep{endal:1978,fryer:2000}.  Not only are the SASI and postshock convection contributions to the gravitational radiation diminished, but the PNS vibrational signals are damped because of less turbulent downflows of matter onto the PNS surface.  
 This results in a ``muting'' of the GW signal with increasing rotation speeds.
-While the origins of this muting are physical, such behavior may not be seen in full 3D simulations of CCSNe due to the appearance of spiral modes of the SASI and magnetorotational instabilities (MRI) \citep{cerda-duran:2007,andresen:2018} . 
+While the origins of this muting are physical, such behavior may not be seen in full 3D simulations of CCSNe due to the appearance of spiral modes of the SASI and magnetorotational instabilities (MRI) \citep{cerda-duran:2007,andresen:2019} . 
 
 Compared with previous works, the strength of this project is its ability analyze GWs from multiple progenitors hundreds of milliseconds postbounce while accurately accounting for rotation and neutrinos.  The wide breadth of parameter space we examine allows us to reveal certain rotational effects on the GW signal in the context of a controlled study.
 
@@ -142,7 +144,7 @@ This paper is organized as follows:  in Section \ref{sec:method} we present our 
 \section{Methods and Simulation Setup}
 \label{sec:method}
 We utilize the \texttt{FLASH} (version 4) multiscale, multiphysics adaptive mesh refinement simulation framework for our simulations \citep{fryxell:2000,dubey:2009}.\footnote[7]{\url{http://flash.uchicago.edu/site/}}  We employ a modified, GR, effective potential \citep{marek:2006, oconnor:2018} incorporated into the multipole Poisson solver of \citet{couch:2013a}, where we retain spherical harmonic orders up through 16.   We utilize the SFHo EOS in all of our 15 simulations \citep{steiner:2013}.  Our grid setup is a 2D cylindrical geometry with the PARAMESH (v.4-dev) library for adaptive mesh refinement  \citep{macneice:2000}.  The outer boundary is $10^4$ km in all directions, with nine levels of refinement, yielding a finest grid spacing of about 0.65 km.
-The maximum allowed level of refinement is decreased as a function of spherical radius, $r$, in order to maintain a resolution aspect ratio, $\Delta x_i / r$, of about 0.01, corresponding approximately to an ``angular'' resolution of $0.5^{\circ}$ .
+The maximum allowed level of refinement is decreased as a function of spherical radius, $r$, in order to maintain a resolution aspect ratio, $\Delta x_i / r$, of about 0.01, corresponding approximately to an ``angular'' resolution of $0.5^{\circ}$.
 
 %M1 section
 Neutrinos play a vital role in CCSNe.  Directly after collapse, they provide an avenue through which the PNS can cool.  As the shock propagates outward, they also provide heating in the gain region that is crucial in reviving the explosion, according to the neutrino heating mechanism.  The opacity of the material to these outflowing neutrinos must be carefully accounted for in an energy-dependent way.  We incorporate a multidimensional, multispecies, energy-dependent, two-moment scheme with an analytic closure, or the so-called M1 scheme.  Our implementation is based on \citet{oconnor:2015}, \citet{shibata:2011}, and \citet{cardall:2013}.  A detailed outline of the M1 implementation in \texttt{FLASH} is in \citet{oconnor:2018}.  This combination of rotation and the M1 neutrino treatment is similar to the work of \citet{obergaulinger:2017} and \citet{obergaulinger:2018}.  In order to reduce computational costs to explore the wide parameter space for our study, we neglect velocity-dependent neutrino transport and do not account for inelastic neutrino-electron scattering.
@@ -171,7 +173,7 @@ At the start of core collapse, when we map the 1D models into our 2D grid, we ap
     \label{eq:omega}
 \end{equation}
 
-where $r = \sqrt{R^2 + z^2}$ is the spherical radius for a given cylindrical radius $R$ and altitude $z$, $\Omega_0$ is the central angular speed of the star, and $A$ is the differential rotation parameter \citep{eriguchi:1984}.  For large values of $A$, the stellar rotation is nearly solid body, whereas small values of $A$ lead to a more differential profile. 
+where $r = \sqrt{R^2 + z^2}$ is the spherical radius for a given cylindrical radius $R$ and altitude $z$, $\Omega_0$ is the central angular speed of the star, and $A$ is the differential rotation parameter \citep{eriguchi:1985}.  For large values of $A$, the stellar rotation is nearly solid body, whereas small values of $A$ lead to a more differential profile. 
 The {\it linear} rotational velocity is then calculated by multiplying the angular speed with the distance from the rotation axis, $v_\phi (R, z) = R \Omega (r) $. 
 
 The precise rotation rates and profiles of massive stellar cores at collapse are uncertain.
@@ -205,7 +207,7 @@ Progenitor Mass ($M_\odot$) & Compactness & \textit{A}(1000 km) \\
 40  & 0.5341 &         1.282           \\
 60  & 0.1708 &         0.9112          
 \end{tabular}
-\caption{Listed values for ZAMS mass, Compactness Calculated from \citet{Suk:2016}, and Differential Rotation Parameter \textit{A}.}
+\caption{Listed values for ZAMS Mass, Compactness Calculated from \citet{Suk:2016}, and Differential Rotation Parameter \textit{A}.}
 \label{table:compact}
 \end{table}
 
@@ -280,13 +282,6 @@ where $P_l^m$ are the associated Legendre polynomials \citep{burrows:2012,takiwa
 It follows that $a_0^0$ corresponds to the average shock radius.
 \subsection{Rotation's Influence on Shock Front Evolution}
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width = 0.5\textwidth]{M1_shock_mass_raster.pdf}
-    \caption{Shock radius evolution of the four progenitor models versus time (postbounce).  As different progenitors evolve at different rates, they may not have enough time to revive their shock front within the 300 ms interim.  As such, only the nonrotating 20 \Msun and 60 \Msun progenitors show substantial shock expansion. }
-    \label{fig:shock}
-\end{figure} 
-
 While our focus in the present work is on the GW signals up to 300 ms postbounce, we briefly discuss the impact of rotation on the evolution of the shock front as it propagates outward.  In certain cases, independent of the mechanism, the shock front may require over 300 ms to revive and complete a successful explosion.  Because our simulations are only run until 300 ms postbounce, we refrain from asserting which progenitors successfully explode.  Rather, we remark on how the average shock radii develop with time.
 
 Of our 15 simulations, only the nonrotating 20 \Msun and 60 \Msun progenitors show substantial shock expansion.  The effect rotation has on reviving the shock is not a simple one. 
@@ -296,6 +291,13 @@ These two dominant effects, weaker convection and reduced neutrino luminosity, c
 Despite rotation inhibiting certain aspects of a successful explosion, some of our rotating models ($\Omega_0 = 3$ rad s$^{-1}$, 20 \Msun, and 60 \Msun) have advancing shock radii.  With longer simulation times, these could lead to explosion.  In these cases, it seems that rotation could be sufficiently rapid to overcome the deleterious effects on convection and reduced neutrino luminosity.
 Similar nonmonotonic behavior is reported by \citet{summa:2018} in their 2D simulations.
 Hence, the introduction of rotation involves competing forces that can enhance or diminish the shock.  Figure \ref{fig:shock} shows the average shock radius evolution versus time (postbounce) over our entire parameter space.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width = 0.5\textwidth]{M1_shock_mass_raster.pdf}
+    \caption{Shock radius evolution of the four progenitor models versus time (postbounce).  As different progenitors evolve at different rates, they may not have enough time to revive their shock front within the 300 ms interim.  As such, only the nonrotating 20 \Msun and 60 \Msun progenitors show substantial shock expansion. }
+    \label{fig:shock}
+\end{figure} 
 
 \subsection{Comparison with CFC GR}
 
@@ -314,8 +316,8 @@ Hence, the introduction of rotation involves competing forces that can enhance o
   \label{fig:bounce}
 \end{figure*}
 
-In multidimensional simulations of CCSNe, the treatment of gravity must offer a balance between numerical accuracy and computational cost.   The CFC offers a nearly identical GW signal, compared with full GR, while reducing simulation time \citep{ott:2007}.  Figure \ref{fig:bounce_cfc} offers a qualitative check of our effective GR potential compared with CFC \citep{richers:2017}.  We incorporate an identical deleptonization profile \citep{lieb:2005} and SFHo EOS \citep{steiner:2013} for a 12 \Msun progenitor \citep{woosley:2007}.  Moreover, we match the differential rotation parameter and rotation profile by selecting an $A = 634$ km and $\Omega_0 = 3$ rad s$^{-1}$.  For this comparison, we match the neutrino physics of \citet{richers:2017}'s simulation by using a ray-by-ray, three species, neutrino leakage scheme \citep{oconnor:2010,couch:2014}.  We capture a nearly identical bounce signal and similar strain up to 5 ms postbounce. \par
-However, after the initial bounce signal ring-down, it is clear that the different computational treatments of hydrodynamics and grid geometry result in differences in the GW strains.  Although not exact, the efficiency of the effective general relativistic potential offers a reasonable method to accurately model the GW signal from CCSNe to within 10\% and allows for larger sweeps of parameter space \citep{muller:2013}.
+In multidimensional simulations of CCSNe, the treatment of gravity must offer a balance between numerical accuracy and computational cost.   The CFC offers a nearly identical GW signal, compared with full GR, while reducing simulation time \citep{ott:2007}.  Figure \ref{fig:bounce_cfc} offers a qualitative check of our effective GR potential compared with CFC \citep{richers:2017}.  We incorporate an identical deleptonization profile \citep{lieb:2005} and SFHo EOS \citep{steiner:2013} for a 12 \Msun progenitor \citep{woosley:2007}.  Moreover, we match the differential rotation parameter and rotation profile by selecting an $A = 634$ km and $\Omega_0 = 3$ rad s$^{-1}$.  For this comparison, we match the neutrino physics of \citet{richers:2017}'s simulation by using a ray-by-ray, three-species, neutrino leakage scheme \citep{oconnor:2010,couch:2014}.  We capture a nearly identical bounce signal and similar strain up to 5 ms postbounce. \par
+However, after the initial bounce signal ring-down, it is clear that the different computational treatments of hydrodynamics and grid geometry result in differences in the GW strains.  Although not exact, the efficiency of the effective GR potential offers a reasonable method to accurately model the GW signal from CCSNe to within 10\% and allows for larger sweeps of parameter space \citep{muller:2013}.
 
 %-----------------------------------
 %-----------------------
@@ -333,7 +335,7 @@ Figure \ref{fig:bounce} displays the bounce signals for all 10 progenitor masses
 The inverse is true for the $12\,M_\odot$ case.  Because it has a less compact inner core at collapse, using Equation (\ref{eq:omega}) leads to less initial angular momentum, thereby producing a lower amplitude bounce signal.  After modifying the initial rotation rates of both progenitors, to match the progenitor core angular momenta (right panel of Figure \ref{fig:bounce}), the change produces nearly identical GW bounce signals.  
 
 Hence, our results from exploring the bounce signal over a wide range of progenitor masses support the results of previous studies of the angular momentum dependence of the GW signal \citep{dimm:2008,abdik:2010,abdik:2014} but also serve as a cautionary note for future groups who perform rotating CCSN simulations with a wide variety of progenitor models.  
-It is worth noting that other rotational treatments exist beyond the simple angular velocity law, such as specifying a radial, specific angular momentum profile \citep[eg.,][]{oconnor:2011} or using the rotational profile from the rotating stellar evolution models directly \citep{summa:2018}.  [The profiles used by \citet{oconnor:2011} lead to a roughly uniform rotation rate within a mass coordinate of 1 $M_\odot$ and $\Omega(r)$ decreasing with  $r^{2}$ outside this mass coordinate.  \citet{summa:2018} utilize two different rotation schemes: one that matches the \citet{heger:2005} models seen in Figure \ref{fig:ovsr} and one that is solid body out to $\sim 1500$ km and then falls as $r^{-3/2}$.
+It is worth noting that other rotational treatments exist beyond the simple angular velocity law, such as specifying a radial, specific angular momentum profile \citep[eg.,][]{oconnor:2011} or using the rotational profile from the rotating stellar evolution models directly \citep{summa:2018}.  The profiles used by \citet{oconnor:2011} lead to a roughly uniform rotation rate within a mass coordinate of 1 $M_\odot$ and $\Omega(r)$ decreasing with  $r^{2}$ outside this mass coordinate.  \citet{summa:2018} utilize two different rotation schemes: one that matches the \citet{heger:2005} models seen in Figure \ref{fig:ovsr} and one that is solid body out to $\sim 1500$ km and then falls as $r^{-3/2}$.
 
 \subsection{Rotational Influence on Accretion-phase GW Emission}
 
@@ -405,7 +407,7 @@ The frequencies of g-modes, however, are on the order of hundreds of hertz, fall
 The top panel of Figure \ref{fig:region} displays the contribution of the vibrating PNS to the majority of the GW signal during the accretion-phase, with $h_+D$ normalized strain amplitudes around 50 cm.  
 These g-modes are thought to be excited by downflows from postshock convection or internal PNS convection \citep{marek:2009b,murphy:2009,muller:2013}.  
 Figure \ref{fig:2x2} shows a spectrogram for the $12 \, M_\odot$ progenitor over all rotational speeds, where lighter colors represent greater strain amplitudes, $h_+$.  The dominant yellow band that extends from 100 to 1000 Hz represents this contribution.  
-Overlaid in gray is the dynamical frequency that is characterized by the average density of the PNS, $\overline{\rho}$, and gravitational constant, $G$, $f_\mathrm{dyn} = \sqrt{G \overline{\rho}}$,  that evolves synchronously with the g-mode contribution.  The synchronized evolution of $f_\mathrm{dyn}$ and the frequency at which the PNS emits gravitational radiation are no coincidence.  As both are fundamentally related to the mass and radius of the PNS, we expect that both are affected similarly when introducing rotation.  The initial progenitor rotation will centrifugally support the PNS, thereby leaving it with a larger average radius.  Similar to two tuning forks of different lengths, the PNS with a larger radius will emit at a lower frequency, compared with a smaller PNS.  This `flattening' of the emitted frequency is displayed in Figure \ref{fig:2x2}.  Furthermore, Figure \ref{fig:2x2} provides a different lens through which the rotational muting is displayed, via the progressively darker panels with increasing rotational velocity.  We note that more robust peak GW frequency calculations exist \citep[e.g.,][]{muller:2013,moro:2018}, but we find that the simple $f_\mathrm{dyn}$ relation gives a good estimate of the PNS peak frequency.
+Overlaid in gray is the dynamical frequency that is characterized by the average density of the PNS, $\overline{\rho}$, and gravitational constant, $G$, $f_\mathrm{dyn} = \sqrt{G \overline{\rho}}$,  that evolves synchronously with the g-mode contribution.  The synchronized evolution of $f_\mathrm{dyn}$ and the frequency at which the PNS emits gravitational radiation are no coincidence.  As both are fundamentally related to the mass and radius of the PNS, we expect that both are affected similarly when introducing rotation.  The initial progenitor rotation will centrifugally support the PNS, thereby leaving it with a larger average radius.  Similar to two tuning forks of different lengths, the PNS with a larger radius will emit at a lower frequency, compared with a smaller PNS.  This ``flattening'' of the emitted frequency is displayed in Figure \ref{fig:2x2}.  Furthermore, Figure \ref{fig:2x2} provides a different lens through which the rotational muting is displayed, via the progressively darker panels with increasing rotational velocity.  We note that more robust peak GW frequency calculations exist \citep[e.g.,][]{muller:2013,moro:2018}, but we find that the simple $f_\mathrm{dyn}$ relation gives a good estimate of the PNS peak frequency.
 
 We also Fourier transform the accretion-phase GW signal, as displayed in Figure \ref{fig:spetra_long} and scale the magnitude of the Fourier coefficients by $\sqrt{f}$ in order to produce ASD plots.  These plots commonly display the sensitivity curves of current and next-generation GW detectors.  We define $t_{\mathrm{be}}$ similar to \citet{richers:2017} as the third zero crossing of the gravitational strain.  We focus on the signal later than $t_{\mathrm{be}} + 6$ ms in order to remove the bounce signal and early postbounce oscillation contribution to the signal.  
 The dominant contributions are the prompt convection, SASI, and surface g-modes of the PNS---as displayed by a peak frequency ranging from 700 to 1000 Hz.  Universally, the prevalence of the peak frequency decreases with increasing rotational velocity.  It is worth noting this peak could shift to higher frequencies with longer simulation times.
@@ -449,8 +451,8 @@ We reveal a novel rotational effect on the GW signal during the accretion-phase.
 We postpone asserting quantitative relations between low-frequency emission and progenitor angular momentum until we incorporate more detailed microphysics.
 
 
-While our approximations have allowed us to make large sweeps of parameter space, they leave room for us to include more robust microphysics.  In an ideal situation, we would compute 3D simulations, including full GR, magnetohydrodynamics, and GR Boltzmann neutrino transport that incorporates velocity dependence and inelastic scattering on electrons and nucleons.  These additions would allow for more accurate gravitational waveforms and allow other phenomena to occur, for example the $m\ne 0$ (spiral) modes of the SASI. \citet{andresen:2018} recently highlighted the rotational effects on GWs in 3D.  Inherent to its 3D nature, their study finds the strongest GW amplitudes at high rotation velocities due to these spiral modes.  The 2D geometry of our study, however, allows us to observe the relative strength of the convective signal, without interference from $m\ne 0$ modes, as we extend beyond the case of a single rotational velocity.
-While the physical origin of this muting that damps the convection and the SASI is not constrained only to 2D, in 3D, as \citet{andresen:2018} point out, other nonaxisymmetric instabilities can contribute to significant GW emission at late times, negating this rotational muting effect.
+While our approximations have allowed us to make large sweeps of parameter space, they leave room for us to include more robust microphysics.  In an ideal situation, we would compute 3D simulations, including full GR, magnetohydrodynamics, and GR Boltzmann neutrino transport that incorporates velocity dependence and inelastic scattering on electrons and nucleons.  These additions would allow for more accurate gravitational waveforms and allow other phenomena to occur, for example the $m\ne 0$ (spiral) modes of the SASI. \citet{andresen:2019} recently highlighted the rotational effects on GWs in 3D.  Inherent to its 3D nature, their study finds the strongest GW amplitudes at high rotation velocities due to these spiral modes.  The 2D geometry of our study, however, allows us to observe the relative strength of the convective signal, without interference from $m\ne 0$ modes, as we extend beyond the case of a single rotational velocity.
+While the physical origin of this muting that damps the convection and the SASI is not constrained only to 2D, in 3D, as \citet{andresen:2019} point out, other nonaxisymmetric instabilities can contribute to significant GW emission at late times, negating this rotational muting effect.
 Thus, once again, we are reminded of the key role of 3D simulations in the study of the CCSN mechanism.
 
 \acknowledgements

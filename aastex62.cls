@@ -650,7 +650,7 @@ revtex4-1.cls^^J^^J}\stop
 \ifrnaas
 \vspace*{-\headsep}\vspace*{\headheight}
 \footnotesize
-\noindent{\sc Draft version \today}\\[2pt]
+\noindent{\sc  \today}\\[2pt]
 {\footnotesize Typeset using \LaTeX\ {\bf RNAAS} style in AASTeX62}
 \par\vspace*{-\baselineskip}\vspace*{0.625in}
 \else
